@@ -65,6 +65,7 @@ int main(void) {
 	printf("1 - Interets annuels.\n");
 	printf("2 - Conversion EURO --> CHF.\n");
 	printf("3 - Conversion CHF --> EURO.\n");
+	printf("0 - Quitter                 \n");
 	printf("Choix:");
 	scanf("%d", &choix);
 	if (choix == 1)
@@ -73,6 +74,8 @@ int main(void) {
 	    conversion_euro_chf();
 	else if (choix == 3)
 	    conversion_chf_euro();
+	else if (choix == 0)
+	    printf("Fin du programme");
 	else
 	    printf("Choix incorrect");
 	system("PAUSE");
